@@ -3,49 +3,55 @@ body {
   font-size: 16px;
   margin: 0;
 }
-a {
-  /*Aqui especificamos que todos lo <a hereden el color de su elemento padre>    */
-  color: inherit;
-  text-decoration: none;
-}
-nav {
+nav a {
   display: flex;
-  justify-content: space-between;
-  /*   justify-content: flex-start;
+  color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  right: 20px;
+  top: 10px;
   justify-content: flex-end;
-  justify-content: space-around; */
-  align-items: center;
-  background: black;
-  color: white;
-  /* position: relative; */
+  text-decoration: none;
 }
 nav i {
   font-size: 4rem;
-  color: #cc3333;
+  color: white;
   margin-left: 1rem;
-
-  /* Empieza Primera forma*/
-
-  /*   position:absolute;
-  bottom:200px;
-  right:400px; */
-
-  /* Acaba primera forma */
-
-  /* empieza segunda forma  */
-
-  /* acaba segunda forma  */
+  display: flex;
+  position: absolute;
 }
-nav a {
-  margin-right: 1rem;
+.ancors a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.65);
+  /* display: flex; */
+  justify-contet: space-between;
+  /*  flex-direction: row; */
+  padding: 15px 10px;
+  font-size: 13px;
+}
+
+button {
+  background-color: #279aff;
+  border-radius: 4px;
+  border: none;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 22px;
+  font-stretch: normal;
+  font-style: normal;
+  height: calc(48px + 1.1vw);
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: center;
+  margin: 50px;
+  font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
 }
 .cover {
-  background: red;
-  height: 500px;
+  height: 100%;
+  width: 100%;
   background-image: url("https://i.imgur.com/s85FZkc.png");
   color: white;
   position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   /*  De derecha a izquierda  */
@@ -53,76 +59,24 @@ nav a {
   /* De arriba hacia abajo   */
   justify-content: center;
 }
-.cover h1 {
-  margin: 0;
-  font-size: 4rem;
-}
 
-.cover p {
-  margin: 0;
-  font-size: 1.5rem;
-  padding: 0px 100px 0px 100px;
-  /* padding: 0px 100px; */
-}
-
-.cover i {
-  font-size: 7rem;
-  /*   transition: font-size .3s,  ease, color 1s ease-in; */
-  transition: all 2s cubic-bezier(0, 1.36, 0, 1.46);
-  animation: pulse 1.5s ease infinite alternate;
-  cursor: pointer;
-}
-
-/* .cover i:hover{
-  transform:scale(1.5) rotate(45deg);
-  
-  color:red;
-} */
-
-.overlay {
-  /*  height:300px;
- width:300px; */
-  height: 100%;
+.disney1 img {
+  display: block;
   width: 100%;
-  background: black;
-  opacity: 0.7;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-height: 200px;
+}
+.disney1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-@keyframes giro {
-  /*   to{
-    transform:rotate(0deg);
-  }
-  from{
-    transform:rotate(360deg);
-  } */
-
-  /*   0%{
-    transform:rotate(0deg);
-  }
-  25%{
-    transform:rotate(45deg);
-  }
-  50%{
-    transform:rotate(90deg); 
-  }
-  75%{
-    transform:rotate(180deg); 
-  }
-  100%{
-    transform:rotate(360deg) translateY(-100px); 
-  } */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
+.imgContent img {
+  /*   display:flex; */
+  justify-content: space-between;
+  max-width: 200px;
+  min-height: 60px;
 }
